@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+		<title>音悦台首页</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/transform.js"></script>
+		<script src="js/vDrag.js"></script>
+		<script src="js/index.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<!--头部 begin-->
+			<div id="header">
+				<!--头部上半部分-->
+				<div id="header_top">
+					<h1 id="logo">
+						<a href="javascript:;">
+							<img src="img/logo.png" />
+						</a>
+					</h1>
+					<a href="javascript:;" id="menu" class="menuClos"></a>
+					<div id="nav">
+						<a href="javascript:;" id="searchBtn">搜索</a>
+						<a href="javascript:;" id="loginBtn">登陆</a>
+						<a href="javascript:;" id="registerBtn">注册</a>
+					</div>
+				</div>
+				<!--头部下半部分-->
+				<form id="search" action="http://www.baidu.com.cn/s" method="get">
+					<input type="hidden" name="cl" value="3" />
+					<input type="text" id="search_val" name="wd" placeholder="请输入搜索内容" />
+					<input type="submit" id="search_sub" value="搜索" />
+				</form>
+				<!--遮罩层-->
+				<ul id="list">
+					<li>
+						<a href="javascript:;">首页</a>
+					</li>
+					<li>
+						<a href="javascript:;">MV</a>
+					</li>
+					<li>
+						<a href="javascript:;">悦单</a>
+					</li>
+					<li>
+						<a href="javascript:;">V榜</a>
+					</li>
+					<li>
+						<a href="javascript:;">音悦</a>
+					</li>
+					<li>
+						<a href="javascript:;">商城</a>
+					</li>
+					<li>
+						<a href="javascript:;">节目</a>
+					</li>
+					<li>
+						<a href="javascript:;">饭团</a>
+					</li>
+					<li>
+						<a href="javascript:;">资讯</a>
+					</li>
+					<li>
+						<a href="javascript:;">我的家</a>
+					</li>
+					<li>
+						<a href="javascript:;">APP下载</a>
+					</li>
+					<li>
+						<a href="javascript:;">热门应用</a>
+					</li>
+				</ul>
+			</div>
+			<!--头部 end-->
+			
+			<!--内容区 start-->
+			<div id="contentWrap">
+				<div id="content">
+					<!--导航-->
+					<div id="nav_wrap">
+						<ul id="nav_list">
+							<li class="active">
+								<a href="javascript:;">首页</a>
+							</li>
+							<li>
+								<a href="javascript:;">MV</a>
+							</li>
+							<li>
+								<a href="javascript:;">悦单</a>
+							</li>
+							<li>
+								<a href="javascript:;">V榜</a>
+							</li>
+							<li>
+								<a href="javascript:;">音悦</a>
+							</li>
+							<li>
+								<a href="javascript:;">商城</a>
+							</li>
+							<li>
+								<a href="javascript:;">节目</a>
+							</li>
+							<li>
+								<a href="javascript:;">饭团</a>
+							</li>
+							<li>
+								<a href="javascript:;">资讯</a>
+							</li>
+							<li>
+								<a href="javascript:;">我的家</a>
+							</li>
+							<li>
+								<a href="javascript:;">APP下载</a>
+							</li>
+							<li>
+								<a href="javascript:;">热门应用</a>
+							</li>
+						</ul>
+					</div>
+					<!-- banner -->
+					<div id="ban_wrap">
+						<ul id="ban_list">
+							<li><a href="#"><img src="img/1.jpg" /></a></li>
+							<li><a href="#"><img src="img/2.jpg" /></a></li>
+							<li><a href="#"><img src="img/3.jpg" /></a></li>
+							<li><a href="#"><img src="img/4.jpg" /></a></li>
+							<li><a href="#"><img src="img/5.jpg" /></a></li>
+						</ul>
+						<div id="ban_nav">
+							<span class="ban_active"></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+					<!--MV首播-->
+					<div class="tab">
+						<div class="tab_header">
+							<h1>MV首播</h1>
+							<a href="javascript:;">更多&gt;</a>
+						</div>
+						<nav class="tab_nav">
+							<a href="javascript:;">全部</a>
+							<a href="javascript:;">内地</a>
+							<a href="javascript:;">港台</a>
+							<a href="javascript:;">欧美</a>
+							<a href="javascript:;">韩国</a>
+							<a href="javascript:;">日本</a>
+							<span class="bottomG"></span>
+						</nav>
+						<div class="tab_wrap">
+							<div class="width loading"></div>
+							<ul class="width tab_list">
+								<li>
+									<img src="img/a.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="img/b.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="img/c.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="img/d.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="img/e.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="img/f.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="width loading"></div>
+						</div>
+					</div>
+					<div class="tab">
+						<div class="tab_header">
+							<h1>MV首播</h1>
+							<a href="javascript:;">更多&gt;</a>
+						</div>
+						<nav class="tab_nav">
+							<a href="javascript:;">全部</a>
+							<a href="javascript:;">内地</a>
+							<a href="javascript:;">港台</a>
+							<a href="javascript:;">欧美</a>
+							<a href="javascript:;">韩国</a>
+							<a href="javascript:;">日本</a>
+							<span class="bottomG"></span>
+						</nav>
+						<div class="tab_wrap">
+							<div class="width loading"></div>
+							<ul class="width tab_list">
+								<li>
+									<img src="img/a.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="img/b.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="img/c.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="img/d.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="img/e.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="img/f.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="width loading"></div>
+						</div>
+					</div>
+					<div class="tab">
+						<div class="tab_header">
+							<h1>MV首播</h1>
+							<a href="javascript:;">更多&gt;</a>
+						</div>
+						<nav class="tab_nav">
+							<a href="javascript:;">全部</a>
+							<a href="javascript:;">内地</a>
+							<a href="javascript:;">港台</a>
+							<a href="javascript:;">欧美</a>
+							<a href="javascript:;">韩国</a>
+							<a href="javascript:;">日本</a>
+							<span class="bottomG"></span>
+						</nav>
+						<div class="tab_wrap">
+							<div class="width loading"></div>
+							<ul class="width tab_list">
+								<li>
+									<img src="img/a.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="img/b.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="img/c.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="img/d.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="img/e.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="img/f.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="width loading"></div>
+						</div>
+					</div>
+					<div class="tab">
+						<div class="tab_header">
+							<h1>MV首播</h1>
+							<a href="javascript:;">更多&gt;</a>
+						</div>
+						<nav class="tab_nav">
+							<a href="javascript:;">全部</a>
+							<a href="javascript:;">内地</a>
+							<a href="javascript:;">港台</a>
+							<a href="javascript:;">欧美</a>
+							<a href="javascript:;">韩国</a>
+							<a href="javascript:;">日本</a>
+							<span class="bottomG"></span>
+						</nav>
+						<div class="tab_wrap">
+							<div class="width loading"></div>
+							<ul class="width tab_list">
+								<li>
+									<img src="img/a.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="img/b.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="img/c.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="img/d.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="img/e.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="img/f.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="width loading"></div>
+						</div>
+					</div>
+					<div class="tab">
+						<div class="tab_header">
+							<h1>MV首播</h1>
+							<a href="javascript:;">更多&gt;</a>
+						</div>
+						<nav class="tab_nav">
+							<a href="javascript:;">全部</a>
+							<a href="javascript:;">内地</a>
+							<a href="javascript:;">港台</a>
+							<a href="javascript:;">欧美</a>
+							<a href="javascript:;">韩国</a>
+							<a href="javascript:;">日本</a>
+							<span class="bottomG"></span>
+						</nav>
+						<div class="tab_wrap">
+							<div class="width loading"></div>
+							<ul class="width tab_list">
+								<li>
+									<img src="img/a.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="img/b.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="img/c.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="img/d.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="img/e.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="img/f.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="width loading"></div>
+						</div>
+					</div>
+					<div class="tab">
+						<div class="tab_header">
+							<h1>MV首播</h1>
+							<a href="javascript:;">更多&gt;</a>
+						</div>
+						<nav class="tab_nav">
+							<a href="javascript:;">全部</a>
+							<a href="javascript:;">内地</a>
+							<a href="javascript:;">港台</a>
+							<a href="javascript:;">欧美</a>
+							<a href="javascript:;">韩国</a>
+							<a href="javascript:;">日本</a>
+							<span class="bottomG"></span>
+						</nav>
+						<div class="tab_wrap">
+							<div class="width loading"></div>
+							<ul class="width tab_list">
+								<li>
+									<img src="img/a.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="img/b.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="img/c.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="img/d.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="img/e.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="img/f.jpg" />
+									<span>君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない君に贈る花がない</span>
+									<div class="ice">
+										<div class="ice_left">
+											<span class="ice_pic"></span>
+											<span>9167</span>
+										</div>
+										<div class="ice_right">
+											<span class="ice_pic"></span>
+											<span>91</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="width loading"></div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<!--内容区 end-->
+			
+			<!--滚动条-->
+			<div id="scrollBar"></div>
+		</div>
+	</body>
+</html>

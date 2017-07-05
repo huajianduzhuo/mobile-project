@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input {
+  outline: none;
+}
+ul {
+  list-style: none;
+}
+#wrap {
+  height: 100%;
+  background: #eee;
+}
+/* --------------------------header start------------------------------- */
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4rem;
+  background: #232323;
+  z-index: 300;
+}
+#header #header_top {
+  height: 2rem;
+}
+#header #header_top #logo {
+  float: left;
+  width: 3.55555556rem;
+  height: 1.3037037rem;
+  line-height: 1.3037037rem;
+  padding: 0.38518519rem 0.25185185rem 0.31111111rem;
+}
+#header #header_top #logo img {
+  width: 100%;
+}
+#header #header_top #menu {
+  float: left;
+  width: 1.91111111rem;
+  height: 2rem;
+  background-image: url(../img/menuBtn.png);
+  background-size: 1.21481481rem 3.45185185rem;
+  background-repeat: no-repeat;
+}
+#header #header_top .menuClos {
+  background-position: center 0.23703704rem;
+}
+#header #header_top .menuOpen {
+  background-position: center -1.77777778rem;
+}
+#header #header_top #nav {
+  float: right;
+  padding-top: 0.31111111rem;
+}
+#header #header_top #nav a {
+  float: left;
+  width: 1.64444444rem;
+  height: 1.15555556rem;
+  line-height: 1.15555556rem;
+  background: #690;
+  color: #ccc;
+  margin-right: 0.22222222rem;
+  font-size: 0.62222222rem;
+  text-align: center;
+  border-radius: 0.11851852rem;
+}
+#header #header_top #nav #searchBtn {
+  width: 1.92592593rem;
+  height: 1.3037037rem;
+  line-height: 1.3037037rem;
+  color: #fff;
+  margin-right: 0.44444444rem;
+  margin-top: 0.04444444rem;
+  font-weight: bold;
+  border-radius: 0.14814815rem;
+}
+#header #search {
+  height: 1.52592593rem;
+  padding: 0.23703704rem;
+}
+#header #search #search_val {
+  box-sizing: border-box;
+  float: left;
+  width: 12.28148148rem;
+  height: 1.52592593rem;
+  background: #999;
+  padding: 0.07407407rem 0.14814815rem;
+  border: 0.01481481rem solid #5a5a5a;
+  font-size: 0.60740741rem;
+  color: #333;
+  border-radius: 0.22222222rem;
+}
+#header #search #search_val::-webkit-input-placeholder {
+  color: #333;
+}
+#header #search #search_val:focus {
+  background: #FFFFFF;
+}
+#header #search #search_sub {
+  float: right;
+  width: 3.00740741rem;
+  height: 1.52592593rem;
+  border: none;
+  background: #414040;
+  color: #fff;
+  font-size: 0.60740741rem;
+  border-radius: 0.22222222rem;
+}
+#header #list {
+  display: none;
+  position: absolute;
+  top: 2rem;
+  width: 100%;
+  padding: 0.14814815rem 0;
+  border: 0.01481481rem solid #6a6a6a;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 400;
+}
+#header #list li {
+  float: left;
+  width: 22.5%;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: bold;
+}
+#header #list li a {
+  color: white;
+}
+/* --------------------------header end------------------------------- */
+/* --------------------------内容区 start------------------------------- */
+#contentWrap {
+  height: 100%;
+}
+#content {
+  padding-top: 4rem;
+}
+/* --------------------------导航栏 start------------------------------- */
+#nav_wrap {
+  box-sizing: border-box;
+  height: 2.62222222rem;
+  padding: 0.45925926rem 0 0.20740741rem;
+}
+#nav_wrap #nav_list {
+  float: left;
+  white-space: nowrap;
+  font-size: 0;
+}
+#nav_wrap #nav_list li {
+  display: inline-block;
+  height: 1.91111111rem;
+  line-height: 1.91111111rem;
+  padding: 0 0.56296296rem;
+  font-size: 1rem;
+}
+#nav_wrap #nav_list li a {
+  color: #020202;
+}
+#nav_wrap #nav_list .active {
+  background: #690;
+}
+#nav_wrap #nav_list .active a {
+  color: #fff;
+}
+/* --------------------------导航栏 end------------------------------- */
+/* --------------------------banner start------------------------------- */
+#ban_wrap {
+  position: relative;
+  width: 100%;
+}
+#ban_wrap #ban_list {
+  position: absolute;
+  list-style: none;
+}
+#ban_wrap #ban_list li {
+  float: left;
+}
+#ban_wrap #ban_list li img {
+  width: 100%;
+  display: block;
+}
+#ban_wrap #ban_nav {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+#ban_wrap #ban_nav span {
+  width: 10px;
+  height: 10px;
+  background: gray;
+  border-radius: 50%;
+  display: inline-block;
+}
+#ban_wrap #ban_nav .ban_active {
+  background: red;
+}
+/* --------------------------banner end------------------------------- */
+/* --------------------------tab start------------------------------- */
+.tab {
+  width: 15.4962963rem;
+  background: #fff;
+  margin: 0 auto;
+}
+.tab .tab_header {
+  height: 2rem;
+  line-height: 2rem;
+}
+.tab .tab_header h1 {
+  float: left;
+  font-size: 23px;
+}
+.tab .tab_header a {
+  float: right;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+}
+.tab .tab_nav {
+  position: relative;
+  height: 1.55555556rem;
+  line-height: 1.55555556rem;
+}
+.tab .tab_nav a {
+  float: left;
+  height: 1.55555556rem;
+  width: 1.77777778rem;
+  font-size: 0.65185185rem;
+  text-align: center;
+  color: #6b6b6b;
+}
+.tab .tab_nav .bottomG {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1.77777778rem;
+  height: 0.13333333rem;
+  background: #6f900d;
+}
+.tab .tab_wrap .tab_list {
+  overflow: hidden;
+}
+.tab .tab_wrap .tab_list li {
+  float: left;
+  box-sizing: border-box;
+  width: 7.4962963rem;
+  margin: 0.11851852rem;
+  padding: 0.07407407rem;
+  font-size: 0.59259259rem;
+  background: #efefef;
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tab .tab_wrap .tab_list li > span {
+  white-space: nowrap;
+}
+.tab .tab_wrap .tab_list li img {
+  width: 100%;
+}
+.tab .tab_wrap .tab_list li .ice .ice_left,
+.tab .tab_wrap .tab_list li .ice .ice_right {
+  float: left;
+}
+.tab .tab_wrap .tab_list li .ice .ice_pic {
+  float: left;
+  width: 15px;
+  height: 15px;
+  background: url(../img/ice.png) no-repeat;
+  background-position: 0 4px;
+}
+.tab .tab_wrap .tab_list li .ice .ice_right .ice_pic {
+  background-position: 0 -16px;
+}
+.tab .tab_wrap .loading {
+  height: 1.4962963rem;
+  background: url(../img/loading.gif) no-repeat center;
+  opacity: 0;
+}
+.tab .tab_wrap {
+  width: 300%;
+  overflow: hidden;
+}
+.tab .tab_wrap .width {
+  width: 33.33%;
+  float: left;
+}
+/* --------------------------tab end------------------------------- */
+/* --------------------------内容区 end------------------------------- */
+/* --------------------------滚动条 start------------------------------- */
+#scrollBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4px;
+  background: gray;
+  opacity: 0;
+  z-index: 500;
+}
+/* --------------------------滚动条 end------------------------------- */
