@@ -33,7 +33,7 @@ function transformCSS (elem, name, value) {
 	}else{
 		// 读
 		if(typeof elem.transform[name] == 'undefined'){
-			if(name.indexOf('scale') > 0){
+			if(name.indexOf('scale') >= 0){
 				value = 1;
 			}else{
 				value = 0;
