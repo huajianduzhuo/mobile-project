@@ -19,6 +19,14 @@ window.onload = function () {
 	var list = document.getElementById('list');
 	var footer = document.getElementById('footer');
 	var scrollBar = document.getElementById('scrollBar');
+	var bigImgWrap = document.getElementById('bigImgWrap');
+	var bigImg = document.getElementById('bigImg');
+	var close = document.querySelector('#bigImgHeader a');
+	
+	// 点击关闭大图预览
+	close.addEventListener('touchend', function () {
+		transformCSS(bigImgWrap, 'scale', 0);
+	});
 	
 	// footer 的初始缩放为 0
 	transformCSS(footer, 'scale', 0);
@@ -26,7 +34,7 @@ window.onload = function () {
 	
 	// 存储图片地址的数组
 	var imgArr = [];
-	for(var i=0; i<20; i++){
+	for(var i=0; i<100; i++){
 		imgArr.push("img/"+ (i%18 + 1) +".jpg");
 	}
 	
@@ -66,6 +74,26 @@ window.onload = function () {
 			li.src = imgArr[i];
 			// 该 li 是否加载图片的标记，刚创建时为 false
 			li.isLoad = false;
+			/*
+			 * 点击显示大图
+			 * 滑动时，不应该显示大图，解决误触
+			 * 大图显示变换基点
+			 */
+			var flag = false;
+			li.addEventListener('touchmove', function (event) {
+				flag = true;
+			});
+			li.addEventListener('touchend', function (event) {
+				if(!flag){
+					var top = this.getBoundingClientRect().top;
+					var left = this.getBoundingClientRect().left;
+					bigImgWrap.style.transformOrigin = left + 'px ' + top + 'px';
+					bigImg.src = this.src;
+					transformCSS(bigImgWrap, 'scale', 1);
+				}
+				flag = false;
+			});
+			
 			list.appendChild(li);
 		}
 		start = end;
@@ -167,4 +195,24 @@ window.onload = function () {
 		}
 	}
 	vDrag(wrap, callback);
+	
+	
+	// 大图旋转和缩放
+	(function () {
+		var scale = 1;
+		var rotate = 0;
+		
+		var callback = {
+			start: function () {
+				scale = transformCSS(bigImg, 'scale');
+				rotate = transformCSS(bigImg, 'rotate');
+			},
+			change: function (event) {
+				transformCSS(bigImg, 'scale', scale * event.scale);
+				transformCSS(bigImg, 'rotate', rotate + event.rotation);
+			}
+		}
+		
+		gesture(bigImg , callback);
+	})();
 }
